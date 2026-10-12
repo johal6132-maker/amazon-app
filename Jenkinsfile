@@ -1,9 +1,6 @@
 pipeline {
 
     // Define the agent for the pipeline
-    agent {
-        label 'pavan'
-    }
 
     stages {
 
@@ -11,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'This is checkout stage'
-                git branch: 'main', url: '
+                git branch: 'main', url: 'https://github.com/johal6132-maker/amazon-app.git'
                 echo 'Checkout Completed'
             }
         }
